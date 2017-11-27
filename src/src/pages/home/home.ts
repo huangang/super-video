@@ -16,6 +16,7 @@ export class HomePage {
   type: string;
   player: SafeResourceUrl;
   constructor(public navCtrl: NavController, public toastCtrl: ToastController, public sanitizer: DomSanitizer) {
+    this.type = 'http://50town.com/mf/?url=';
     console.log('Electron is now available: ', electron);
     console.log('Electron remote is now available: ', electron.remote);
     console.log('Path is now available: ', path)

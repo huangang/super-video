@@ -14,3 +14,5 @@ Thumbs.db
 /src/www/build/
 /src/.tmp/
 .idea
+src/platform/*
+src/platforms/*

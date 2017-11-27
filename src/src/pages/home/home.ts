@@ -3,8 +3,8 @@ import { NavController, ToastController } from 'ionic-angular';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 
-declare const electron
-declare const path
+// declare const electron
+// declare const path
 
 @Component({
   selector: 'page-home',
@@ -17,9 +17,9 @@ export class HomePage {
   player: SafeResourceUrl;
   constructor(public navCtrl: NavController, public toastCtrl: ToastController, public sanitizer: DomSanitizer) {
     this.type = 'http://50town.com/mf/?url=';
-    console.log('Electron is now available: ', electron);
-    console.log('Electron remote is now available: ', electron.remote);
-    console.log('Path is now available: ', path)
+    // console.log('Electron is now available: ', electron);
+    // console.log('Electron remote is now available: ', electron.remote);
+    // console.log('Path is now available: ', path)
   }
 
   public watch(){

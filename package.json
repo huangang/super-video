@@ -57,7 +57,9 @@
     "start": "gulp start",
     "test": "electron-mocha build",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "build-android": "cd src && ionic cordova build android",
+    "build-ios": "cd src && ionic cordova build ios"
   },
   "build": {
     "appId": "YOUR.APPID.GOES.HERE",

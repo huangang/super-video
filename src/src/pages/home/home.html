@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>首页</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <iframe src="about:blank" id="player" [src]="player" width="100%" height="400px" allowtransparency="true" frameborder="0" scrolling="no" style="background:#000;">
+  </iframe>
+  <ion-list>
+    <ion-item>
+      <ion-label>选择接口</ion-label>
+      <ion-select [(ngModel)]="type" cancelText="取消" okText="确定">
+        <ion-option value="http://50town.com/mf/?url=">通用vip接口1</ion-option>
+        <ion-option value="http://www.wmxz.wang/video.php?url=">通用vip接口2</ion-option>
+        <ion-option value="http://www.vipjiexi.com/yun.php?url=">通用vip接口3</ion-option>
+        <ion-option value="http://api.svip.baiyug.cn/svip/index.php?url=">④号引擎系统</ion-option>
+        <ion-option value="http://jiexi.071811.cc/jx2.php?url=">5号引擎系统</ion-option>
+        <ion-option value="http://www.sfsft.com/admin.php?url=">6号引擎系统</ion-option>
+        <ion-option value="https://api.47ks.com/webcloud/?v=">7号引擎系统</ion-option>
+        <ion-option value="http://www.wpswan.com/mzr/vipparse/index.php?url=">8号引擎系统</ion-option>
+        <ion-option value="http://qtzr.net/s/?qt=">9号解析</ion-option>
+        <ion-option value="http://api.xfsub.com/index.php?url=">10号小旋风★新</ion-option>
+        <ion-option value="http://api.baiyug.cn/vip/index.php?url=">11号优酷云解析★新</ion-option>
+        <ion-option value="http://000o.cc/jx/ty.php?url=">12号通用接口★新</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>输入地址</ion-label>
+      <ion-input type="url" [(ngModel)]="url"></ion-input>
+    </ion-item>
+    <button ion-button round full (click)="watch()">观看</button>
+  </ion-list>
+</ion-content>

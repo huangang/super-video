@@ -1,0 +1,70 @@
+{
+  "name": "super-video",
+  "productName": "Super Video App",
+  "description": "A Polyonic Electron Ionic 2 starter application",
+  "version": "1.0.0",
+  "author": "huangang",
+  "copyright": "© 2017, huangang",
+  "main": "src/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huangang/super-video"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "asar": "0.13.0",
+    "body-parser": "1.17.2",
+    "chai": "4.1.1",
+    "cookie-parser": "1.4.3",
+    "del": "3.0.0",
+    "electron": "1.7.5",
+    "electron-connect": "0.6.2",
+    "electron-mocha": "4.0.0",
+    "electron-builder": "19.20.1",
+    "express": "4.15.4",
+    "fs-jetpack": "1.2.0",
+    "gulp": "3.9.1",
+    "gulp-batch": "1.0.5",
+    "gulp-env": "0.4.0",
+    "gulp-plumber": "1.1.0",
+    "gulp-util": "3.0.8",
+    "gulp-watch": "4.3.11",
+    "morgan": "1.8.2",
+    "q": "1.5.0",
+    "rollup": "0.42.0",
+    "run-sequence": "2.1.0",
+    "snazzy": "7.0.0",
+    "standard": "10.0.3",
+    "tslint": "5.6.0",
+    "tslint-stylish": "2.1.0",
+    "typescript": "2.4.2",
+    "yargs": "8.0.2"
+  },
+  "optionalDependencies": {
+    "appdmg": "0.4.5",
+    "rcedit": "0.9.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "dev": "cd src && gulp dev",
+    "ionic:build": "cd src && npm run build",
+    "install-native": "node ./tasks/install_native_module",
+    "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy && cd src; tslint 'src/**/*.ts' -t stylish || true",
+    "postinstall": "cd src && npm install && npm run build",
+    "prestart": "cd src && ionic cordova build browser",
+    "pretest": "gulp build --env=test",
+    "release": "gulp release --env=production",
+    "start": "gulp start",
+    "test": "electron-mocha build",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "YOUR.APPID.GOES.HERE",
+    "directories": {
+      "app": "build"
+    }
+  },
+  "dependencies": {
+  }
+}

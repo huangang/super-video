@@ -16,7 +16,7 @@ export class HomePage {
   type: string;
   player: SafeResourceUrl;
   constructor(public navCtrl: NavController, public toastCtrl: ToastController, public sanitizer: DomSanitizer) {
-    this.type = 'http://50town.com/mf/?url=';
+    this.type = 'http://www.ou522.cn/t2/1.php?url=';
     // console.log('Electron is now available: ', electron);
     // console.log('Electron remote is now available: ', electron.remote);
     // console.log('Path is now available: ', path)
@@ -39,8 +39,9 @@ export class HomePage {
       this.presentToast('地址不合法!');
       return;
     }
-    console.log(this.url, this.type);
-    this.player = this.sanitizer.bypassSecurityTrustResourceUrl(this.type + this.url);
+    let value = this.type + this.url;
+    console.log(value);
+    this.player = this.sanitizer.bypassSecurityTrustResourceUrl(value);
   }
 
   checkUrl (url){

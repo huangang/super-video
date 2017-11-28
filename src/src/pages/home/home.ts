@@ -16,7 +16,7 @@ export class HomePage {
   type: string;
   player: SafeResourceUrl;
   constructor(public navCtrl: NavController, public toastCtrl: ToastController, public sanitizer: DomSanitizer) {
-    this.type = 'http://www.ou522.cn/t2/1.php?url=';
+    this.type = 'http://www.dgua.xyz/webcloud/?url=';
     // console.log('Electron is now available: ', electron);
     // console.log('Electron remote is now available: ', electron.remote);
     // console.log('Path is now available: ', path)

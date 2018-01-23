@@ -17,7 +17,7 @@
     "chai": "4.1.1",
     "cookie-parser": "1.4.3",
     "del": "3.0.0",
-    "electron": "1.7.5",
+    "electron": "~1.7.11",
     "electron-connect": "0.6.2",
     "electron-mocha": "4.0.0",
     "electron-builder": "19.20.1",
@@ -67,6 +67,5 @@
       "app": "build"
     }
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
